@@ -1,0 +1,15 @@
+ORG 0000H
+
+CLR A
+ORL A, #80H
+ORL A, #04H
+
+MOV R0, A
+
+CLR A
+ORL A, #10H
+
+MOV B, A
+MOV A, R0
+
+END
